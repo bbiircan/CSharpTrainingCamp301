@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace CSharpTrainingCamp301.EFProject
@@ -50,7 +51,7 @@ namespace CSharpTrainingCamp301.EFProject
         private void btnGetById_Click(object sender, EventArgs e)
         {
             int id = int.Parse(txtId.Text);
-            var values = db.Guide.Where(x => x.GuideId == id).ToList;
+            var values = db.Guide.Where(x => x.GuideId == id).ToList();
             dataGridView1.DataSource = values;
         }
     }
