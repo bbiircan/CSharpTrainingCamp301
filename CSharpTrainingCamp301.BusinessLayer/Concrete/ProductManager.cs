@@ -30,6 +30,11 @@ namespace CSharpTrainingCamp301.BusinessLayer.Concrete
             return _productDal.GetById(Id);
         }
 
+        public List<Object> TGetProductWithCategory()
+        {
+            return _productDal.GetProductWithCategory();
+        }
+
         public void TInsert(Product entity)
         {
             _productDal.Insert(entity);
