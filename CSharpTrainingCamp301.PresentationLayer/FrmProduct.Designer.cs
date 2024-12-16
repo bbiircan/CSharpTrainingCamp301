@@ -46,7 +46,7 @@
             this.txtDescription = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.cmbCategory = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnList2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,6 +58,7 @@
             this.btnGetById.TabIndex = 25;
             this.btnGetById.Text = "Get By ID";
             this.btnGetById.UseVisualStyleBackColor = true;
+            this.btnGetById.Click += new System.EventHandler(this.btnGetById_Click);
             // 
             // btnUpdate
             // 
@@ -67,6 +68,7 @@
             this.btnUpdate.TabIndex = 24;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -76,6 +78,7 @@
             this.btnDelete.TabIndex = 23;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnAdd
             // 
@@ -85,6 +88,7 @@
             this.btnAdd.TabIndex = 22;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // txtProductName
             // 
@@ -205,15 +209,15 @@
             this.cmbCategory.Size = new System.Drawing.Size(191, 24);
             this.cmbCategory.TabIndex = 34;
             // 
-            // button1
+            // btnList2
             // 
-            this.button1.Location = new System.Drawing.Point(221, 293);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(83, 41);
-            this.button1.TabIndex = 35;
-            this.button1.Text = "List2";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnList2.Location = new System.Drawing.Point(221, 293);
+            this.btnList2.Name = "btnList2";
+            this.btnList2.Size = new System.Drawing.Size(83, 41);
+            this.btnList2.TabIndex = 35;
+            this.btnList2.Text = "List2";
+            this.btnList2.UseVisualStyleBackColor = true;
+            this.btnList2.Click += new System.EventHandler(this.btnList2_Click);
             // 
             // FrmProduct
             // 
@@ -221,7 +225,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(1126, 553);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnList2);
             this.Controls.Add(this.cmbCategory);
             this.Controls.Add(this.txtDescription);
             this.Controls.Add(this.label7);
@@ -242,6 +246,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmProduct";
             this.Text = "FrmProduct";
+            this.Load += new System.EventHandler(this.FrmProduct_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -268,6 +273,6 @@
         private System.Windows.Forms.TextBox txtDescription;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox cmbCategory;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnList2;
     }
 }
